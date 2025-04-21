@@ -1,5 +1,4 @@
-import { Card, CardContent } from "lucide-react";
-import { Button } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Globe, Heart, Briefcase } from "lucide-react";
 
 export default function HomePage() {
@@ -9,9 +8,9 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-8 flex justify-center">
             <img
-              src='/logo.png'
-              alt='Centurion Global Capital Logo'
-              className='h-24 w-auto mx-auto rounded shadow-lg'
+              src="/logo.png"
+              alt="Centurion Global Capital Logo"
+              className="h-24 w-auto mx-auto rounded shadow-lg"
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-wide">
@@ -20,11 +19,13 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             A private family office preserving and growing generational wealth with global presence and strategic foresight.
           </p>
-          <Button className="text-lg px-6 py-4 rounded-2xl bg-white text-black shadow-xl hover:bg-gray-200">
+          <button className="text-lg px-6 py-4 rounded-2xl bg-white text-black shadow-xl hover:bg-gray-200">
             Explore Our Investments
-          </Button>
+          </button>
         </div>
       </section>
+
+      {/* other sections unchanged */}
 
       <section className="bg-gray-100 py-20 px-8 border-t border-gray-200">
         <div className="max-w-6xl mx-auto text-center">
@@ -33,12 +34,12 @@ export default function HomePage() {
             For trusted introductions or institutional inquiries:
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button variant="outline" className="text-lg px-6 py-3">
-              <Mail className="mr-2 w-5 h-5" /> info@centurioncapital.com
-            </Button>
-            <Button variant="outline" className="text-lg px-6 py-3">
-              <Globe className="mr-2 w-5 h-5" /> www.centurionglobalcapital.com
-            </Button>
+            <button className="flex items-center gap-2 border border-gray-300 text-lg px-6 py-3 rounded hover:bg-white/80">
+              <Mail className="w-5 h-5" /> info@centurioncapital.com
+            </button>
+            <button className="flex items-center gap-2 border border-gray-300 text-lg px-6 py-3 rounded hover:bg-white/80">
+              <Globe className="w-5 h-5" /> www.centurionglobalcapital.com
+            </button>
           </div>
         </div>
       </section>
